@@ -36,7 +36,7 @@ public class CalculatorTest {
 	public void testDivide(){
 		long ret = 0;
 		try {
-			ret = calculator.divide(12, 0);
+			ret = calculator.divide(12, 3);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
