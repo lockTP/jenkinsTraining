@@ -3,26 +3,6 @@
   <groupId>cn.gov.nsccsz</groupId>
   <artifactId>jenkins-training</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <profiles>
-    <profile>
-      <id>default-tools.jar</id>
-      <activation>
-        <property>
-          <name>java.vendor</name>
-          <value>Sun Microsystems Inc.</value>
-        </property>
-      </activation>
-      <dependencies>
-        <dependency>
-          <groupId>com.sun</groupId>
-          <artifactId>tools</artifactId>
-          <version>1.7.0</version>
-          <scope>system</scope>
-          <systemPath>${java.home}/../lib/tools.jar</systemPath>
-        </dependency>
-      </dependencies>
-    </profile>
-  </profiles>
   
   <dependencies>
   		<dependency>
@@ -51,12 +31,12 @@
 	  <repository>
 	    <id>nexus-releases</id>
 	    <name>Releases</name>
-	    <url>http://10.86.0.28:8888/nexus/content/groups/public/releases/</url>
+	    <url>http://10.86.0.28:8888/nexus/content/repositories/releases/</url>
 	  </repository>
 	  <snapshotRepository>
 	    <id>nexus-snapshots</id>
 	    <name>Snapshot</name>
-	    <url>http://10.86.0.28:8888/nexus/content/groups/public/snapshots/</url>
+	    <url>http://10.86.0.28:8888/nexus/content/repositories/snapshots/</url>
 	  </snapshotRepository>
 	</distributionManagement>
   
