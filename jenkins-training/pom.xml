@@ -3,8 +3,6 @@
   <groupId>cn.gov.nsccsz</groupId>
   <artifactId>jenkins-training</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
-  
   <profiles>
     <profile>
       <id>default-tools.jar</id>
@@ -47,4 +45,19 @@
         </plugin>  
     </plugins>  
   </build> 
+
+  
+	<distributionManagement>
+	  <repository>
+	    <id>nexus-releases</id>
+	    <name>Releases</name>
+	    <url>http://10.86.0.28:8888/nexus/content/groups/public/releases/</url>
+	  </repository>
+	  <snapshotRepository>
+	    <id>nexus-snapshots</id>
+	    <name>Snapshot</name>
+	    <url>http://10.86.0.28:8888/nexus/content/groups/public/snapshots/</url>
+	  </snapshotRepository>
+	</distributionManagement>
+  
 </project>
