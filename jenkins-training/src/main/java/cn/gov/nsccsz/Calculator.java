@@ -3,6 +3,7 @@ package cn.gov.nsccsz;
 public class Calculator {
 
 	public long add(int a, int b){
+		System.out.println("jenkins");
 		return a + b;
 	}
 	
