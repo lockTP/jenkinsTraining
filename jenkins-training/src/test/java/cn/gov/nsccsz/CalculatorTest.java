@@ -38,7 +38,6 @@ public class CalculatorTest {
 		try {
 			ret = calculator.divide(12, 3);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		assertEquals(4, ret);
