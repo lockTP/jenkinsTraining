@@ -12,7 +12,7 @@ public class Calculator {
 	}
 	
 	public long minus(int a, int b){
-		return a - b;
+		return a - b - 1;
 	}
 	
 	public long multiply(int a, int b){
